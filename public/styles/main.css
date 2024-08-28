@@ -9,6 +9,7 @@ html {
 html,
 body {
   height: 100%;
+  
 }
 body {
   background: #21252b;
@@ -44,7 +45,7 @@ body {
   margin-left: 1rem;
 }
 .ag-canvas_svg path {
-  fill: #383d46;
+  fill: #87acef;
   fill-opacity: 1;
   stroke: #21252b;
   stroke-opacity: 1;
@@ -97,8 +98,56 @@ button {
 .total-count {
   font-family: "Roboto", sans-serif;
   color: white;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for readability */
+  padding: 15px 25px;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
   position: absolute;
-  padding: 15px;
-  left: 0;
-  bottom: 0;
+  left: 20px; /* A little margin from the edge */
+  bottom: 20px;
+  font-size: 1.5em; /* Larger font size */
+  letter-spacing: 0.5px; /* Better text spacing */
+}
+
+
+form {
+  display: block;
+  max-width: 33.33%; /* 1/3 of the screen width */
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease-in-out;
+  position: relative;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+button {
+  width: 50%; /* 1/6 of the screen width, adjusted for centering under input */
+  background-color: #007bff;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  left: 25%; /* Centers the button under the input field */
+}
+
+button:hover {
+  background-color: #0056b3;
 }
